@@ -50,6 +50,7 @@
     "idb-plus-blob-store": "^1.1.2",
     "idb-pull-blob-store": "^0.4.0",
     "interface-ipfs-core": "^0.15.0",
+    "justo-assert-cli": "^0.2.1",
     "left-pad": "^1.1.1",
     "lodash": "^4.15.0",
     "ncp": "^2.0.0",
