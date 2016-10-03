@@ -42,4 +42,14 @@ test_expect_success "ipfs init default config succeeds" '
 	test_fsh cat actual_init
 '
 
+test_expect_success "ipfs config output looks good" '
+	echo "$cfg_val" >expected &&
+	ipfs config "$cfg_key" >actual &&
+	test_cmp expected actual
+'
+
+test_launch_ipfs_daemon --offline
+
+test_kill_ipfs_daemon
+
 test_done
